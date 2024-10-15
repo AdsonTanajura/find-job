@@ -1,5 +1,5 @@
 import sequelice from 'sequelize';
-import sequeliceDataSource from './dataBase/connection.js';
+import sequeliceDataSource from '../dataBase/connection.js';
 
 const Job = sequeliceDataSource.define('job', {
     title: {
