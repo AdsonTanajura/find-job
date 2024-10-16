@@ -3,6 +3,10 @@ import Job from "../models/Job.js";
 
 const jobsRouter = Router();
 
+jobsRouter.get('/add', (request, response) => {
+    response.render('add');
+})
+
 jobsRouter.post('/add', (resquest, response) => {
 
     const { title, salary, company, description, email, new_job } = resquest.body;
