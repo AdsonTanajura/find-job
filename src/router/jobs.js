@@ -3,7 +3,7 @@ import Job from "../models/Job.js";
 
 const jobsRouter = Router();
 
-//detalhe da vaga
+
 jobsRouter.get('/view/:id', (request, response) => Job.findOne({
     where: {id: request.params.id}
   }).then(job => {
