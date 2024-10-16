@@ -1,11 +1,11 @@
-import { response, Router } from "express";
+import { Router } from "express";
 import Job from "../models/Job.js";
 
 const jobsRouter = Router();
 
 jobsRouter.get('/add', (request, response) => {
     response.render('add');
-})
+  });
 
 jobsRouter.post('/add', (resquest, response) => {
 
